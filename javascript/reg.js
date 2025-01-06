@@ -42,7 +42,7 @@ function submitForm() {
     }
 
     const telegramData = new FormData();
-    telegramData.append('chat_id', '-1002251465876');
+    telegramData.append('chat_id', '-1002388752943');
     telegramData.append('caption', message);
     telegramData.append('photo', file, file.name);
 
