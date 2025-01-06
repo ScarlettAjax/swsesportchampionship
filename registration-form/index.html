@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon">
+</head>
+<body>
+        <div class="top">
+            <center>
+                <img src="../imgs/logo2.png" alt="logo" height="120px" width="120px" class="logo">
+            </center>
+        </div>
+
+        <div class="title">
+            <center>
+                <h1>Wisdom School eSport Championship</h1>
+            </center>
+        </div>
+
+        <form action="post" id="gameForm">
+            <center>
+                <div class="logo">
+                    <img class="logopt" src="" alt="" width="100px" height="100px" id="sqlogo">
+                    <label id="upbtn" for="upload">Upload a logo</label>
+                    <input class="choose" type="file" id="upload" accept="image/*">
+                </div>
+            </center>
+            <div class="sqname">
+                <center>
+                <input class="datas" name="SquadName" type="text" placeholder="Squad Name">
+                </center>
+            </div>
+            <div class="leader">
+                <div class="ld-code">
+                    <h2>Leader(Student Code)</h2>
+                    <input type="text" name="LD-Code" id="ld-code" placeholder="Ld - Student Code">
+                </div>
+                <div class="ld-id">
+                    <h2>Game ID</h2>
+                    <input type="text" name="LD-ID" id="ld-code" placeholder="Game ID">
+                </div>
+                <div class="nickname">
+                    <h2>In Game Name</h2>
+                    <input type="text" name="LD-Name" id="ld-code" placeholder="In game name">
+                </div>
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <input type="text" name="LD-Tg" id="ld-code" placeholder="Telegram Username">
+                </div>
+            </div>
+            <div class="players">
+                <div class="code">
+                    <h3>Student Code</h3>
+                    <h2 class="player" for="player1">Player 1</h2>
+                    <input type="text" name="P1-StudentCode" id="player1" placeholder="P1 - Student Code"/>
+                    <h2 class="player" for="player2">Player 2</h2>
+                    <input type="text" name="P2-StudentCode" id="player2" placeholder="P2 - Student Code"/>
+                    <h2 class="player" for="player3">Player 3</h2>
+                    <input type="text" name="P3-StudentCode" id="player3" placeholder="P3 - Student Code"/>
+                    <h2 class="player" for="player4">Player 4</h2>
+                    <input type="text" name="P4-StudentCode" id="player4" placeholder="P4 - Student Code"/>
+                    <h2 class="player" for="player5">Player 5</h2>
+                    <input type="text" name="P5-StudentCode" id="player5" placeholder="P5 - Student Code"/>
+                </div>
+                <div class="nickname">
+                    <h3>In game names</h3>
+                    <h2 class="player" for="player1">Player 1</h2>
+                    <input type="text" name="P1-Nickname" id="player1" placeholder="P1 - Nickname"/>
+                    <h2 class="player" for="player2">Player 2</h2>
+                    <input type="text" name="P2-Nickname" id="player2" placeholder="P2 - Nickname"/>
+                    <h2 class="player" for="player3">Player 3</h2>
+                    <input type="text" name="P3-Nickname" id="player3" placeholder="P3 - Nickname"/>
+                    <h2 class="player" for="player4">Player 4</h2>
+                    <input type="text" name="P4-Nickname" id="player4" placeholder="P4 - Nickname"/>
+                    <h2 class="player" for="player5">Player 5</h2>
+                    <input type="text" name="P5-Nickname" id="player5" placeholder="P5 - Nickname"/>
+                </div>
+                <div class="roles">
+                    <h3>Roles</h3>
+                    <h2 class="player" for="player1">P1 Role</h2>
+                    <select name="P1-Role" id="player1">
+                        <option value="Assassin">Assassin</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Mage">Mage</option>
+                        <option value="Marksman">Marksman</option>
+                        <option value="Tank/Support">Tank/Support</option>
+                    </select>
+                    <h2 class="player" for="player2">P2 Role</h2>
+                    <select name="P2-Role" id="player2">
+                        <option value="Assassin">Assassin</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Mage">Mage</option>
+                        <option value="Marksman">Marksman</option>
+                        <option value="Tank/Support">Tank/Support</option>
+                    </select>
+                    <h2 class="player" for="player3">P3 Role</h2>
+                    <select name="P3-Role" id="player3">
+                        <option value="Assassin">Assassin</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Mage">Mage</option>
+                        <option value="Marksman">Marksman</option>
+                        <option value="Tank/Support">Tank/Support</option>
+                    </select>
+                    <h2 class="player" for="player4">P4 Role</h2>
+                    <select name="P4-Role" id="player4">
+                        <option value="Assassin">Assassin</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Mage">Mage</option>
+                        <option value="Marksman">Marksman</option>
+                        <option value="Tank/Support">Tank/Support</option>
+                    </select>
+                    <h2 class="player" for="player5">P5 Role</h2>
+                    <select name="P5-Role" id="player5">
+                        <option value="Assassin">Assassin</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Mage">Mage</option>
+                        <option value="Marksman">Marksman</option>
+                        <option value="Tank/Support">Tank/Support</option>
+                    </select>
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <h2 class="player" for="player1">P1 Telegram</h2>
+                    <input type="text" name="P1-Tg" id="player1" placeholder="P1 - Username or Phone"/>
+                    <h2 class="player" for="player2">P2 Telegram</h2>
+                    <input type="text" name="P2-Tg" id="player2" placeholder="P2 - Username or Phone"/>
+                    <h2 class="player" for="player3">P3 Telegram</h2>
+                    <input type="text" name="P3-Tg" id="player3" placeholder="P3 - Username or Phone"/>
+                    <h2 class="player" for="player4">P4 Telegram</h2>
+                    <input type="text" name="P4-Tg" id="player4" placeholder="P4 - Username or Phone"/>
+                    <h2 class="player" for="player5">P5 Telegram</h2>
+                    <input type="text" name="P5-Tg" id="player5" placeholder="P5 - Username or Phone"/>
+                </div>
+            </div>
+            <div class="smbox">
+                <center>
+                    <input class="btn" type="button" value="SUMBIT" onclick="submitForm()">
+                </center>
+            </div>
+        </form>
+        <div id="loadingSpinner" style="display: none;"></div>
+
+        <div id="dialogBox" style="display: none; background-color: #333; color: #fff; padding: 20px; border-radius: 10px;">
+            <p id="dialogMessage"></p>
+        </div>
+        <div class="overlay" id="vpn-dialog" style="display: none;">
+            <div class="dialog-box">
+                <h2>DDoS Attack များထံမှကာကွယ်နိုင်ရန် ဝဘ်ဆိုဒ်သို့ဝင်ရောက်ချိန် VPN ပိတ်ပြီးမှဝင်ရောက်နိုင်မည်ဖြစ်ပါသည်။</h2>
+                <h1>Student Team (Web Security)</h1>
+                <button onclick="closePage()">OK</button>
+            </div>
+        </div>
+<footer>
+    <p>@Copyright - 2025 (Wisdom School)</p>
+    <p>Developed by ST/07</p>
+</footer>
+<script src="../javascript/reg.js"></script>
+</body>
+</html>
