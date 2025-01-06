@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../imgs/mlbg.jpg');
+    position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    align-content: center;
+    justify-items: center;
+}
+
+.logo {
+    justify-items: center;
+}
+
+.sqname {
+    left: 0;
+    right: 0;
+}
+.logopt {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: rgb(213, 173, 173) 1px solid;
+}
+
+@font-face {
+    font-family: GameFont;
+    src: url("../fonts/HyperOxide-1j96j.ttf");
+}
+
+.org, .title {
+    margin-top: 130px;
+    color: white;
+    -webkit-text-stroke: red;
+    -webkit-text-stroke-width: 1px;
+    font-family: GameFont;
+}
+
+form{
+    margin-top: 10px;
+    width: 706px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    background-color: #000a14;
+    border-radius: 25px;
+}
+
+input.datas {
+    height: 30px;
+    width: 200px;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.5;
+    border: groove 1px;
+}
+
+input.choose {
+    display: none;
+}
+
+#upbtn {
+    display: block;
+    color: white;
+    height: 27px;
+    width: 100px;
+    background-color: violet;
+    margin-top: 10px; margin-bottom: 10px;
+    text-align: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    font-size: small;
+}
+
+#upbtn:hover{
+    background-color: white;
+    color: blueviolet;
+    border: skyblue 1px solid;
+}
+
+div.players, .leader {
+    display: inline-flex;
+    margin-top: 10px;
+    border-top: solid white 1px;
+    border-radius: 5px;
+}
+
+.code, .ld-code {
+    width: 175px;
+    height: 100%;
+    margin-left: 7px;
+}
+
+.nickname, .roles, .contact, .ld-id {
+    width: 175px;
+    height: 100%;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.player, h2{
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+#player1, #player2, #player3, #player4, #player5, #ld-code {
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    height: 23px;
+    width: 140px;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.5;
+    border: groove 1px;
+}
+
+.smbox{
+    justify-self: center;
+}
+
+.btn {
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    background-color: violet;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+    border: skyblue 1px solid;
+}
+
+.btn:active {
+    background-color: red;
+    color: skyblue;
+    border: white 1px solid;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 5px;
+    font-family: GameFont;
+}
+
+#gameForm {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+img.logo {
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+select:active {
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-image: url('../imgs/mlback.jpg');
+      position: absolute;
+    }
+
+    #upbtn{
+        align-content: center;
+    }
+  }
+
+
+div.top {
+  width: 100%;
+  height: 75px;
+  background-color: #000a14;
+  box-shadow: white 1px 1px 1px 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+}
+
+#loadingSpinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Dialog box styles */
+  #dialogBox {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  #dialogMessage {
+    font-size: 16px;
+  }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dialog-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.dialog-box h2 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.dialog-box button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialog-box button:hover {
+    background-color: #ff1f1f;
+}
+
+.dialog-box button:focus {
+    outline: none;
+}
